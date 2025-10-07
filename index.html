@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcbrim LLC | Garage Remodeling & Smart Organization</title>
+  <meta name="description" content="Arcbrim LLC remodels garages into high‑performance spaces: epoxy floors, premium cabinetry, smart technology, and pro‑grade organization across Utah." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%230EA5E9' d='M10 70 L50 20 L90 70 L78 70 L50 38 L22 70 Z'/%3E%3Crect x='28' y='55' width='44' height='25' rx='4' fill='%230f172a'/%3E%3C/svg%3E" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; }
+    .grain { background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px); background-size: 6px 6px; }
+    .img-card { position: relative; }
+    .img-badge { position:absolute; top:.75rem; left:.75rem; }
+  </style>
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Arcbrim LLC",
+    "url": "https://arcbrim.com",
+    "image": "/images/hero-arcbrim-1.png",
+    "description": "Garage remodeling with smart technology, epoxy floors, premium cabinetry, and organization.",
+    "areaServed": ["Utah"],
+    "email": "support@arcbrim.com",
+    "priceRange": "$$$",
+    "address": {"@type":"PostalAddress","addressRegion":"UT","addressCountry":"US"}
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <!-- Header / Nav -->
+  <header x-data="{open:false}" class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-950/70 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <span class="inline-grid place-items-center w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-400/30">
+          <svg class="w-5 h-5 text-sky-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 14.5 12 4l9 10.5h-2.8L12 7.5 5.8 14.5z"/></svg>
+        </span>
+        <span class="font-extrabold tracking-tight text-xl leading-none">Arcbrim<span class="text-sky-400"> LLC</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-sky-300">Services</a>
+        <a href="#smart" class="hover:text-sky-300">Smart Tech</a>
+        <a href="#work" class="hover:text-sky-300">Work</a>
+        <a href="#process" class="hover:text-sky-300">Process</a>
+        <a href="#faq" class="hover:text-sky-300">FAQ</a>
+        <a href="#contact" class="hover:text-sky-300">Contact</a>
+        <a href="#contact" class="ml-2 inline-flex items-center gap-2 rounded-xl border border-sky-400/40 bg-sky-500/10 px-4 py-2 font-semibold text-sky-200 hover:bg-sky-500/20">Get a Quote</a>
+      </nav>
+      <button @click="open=!open" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/10" aria-label="Toggle menu">
+        <svg x-show="!open" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="2" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg x-show="open" x-cloak class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="2" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div x-show="open" x-transition.origin.top.left x-cloak class="md:hidden border-t border-white/10 bg-slate-950/95">
+      <div class="max-w-7xl mx-auto px-4 py-4 grid gap-2 text-sm">
+        <a @click="open=false" href="#services" class="py-2">Services</a>
+        <a @click="open=false" href="#smart" class="py-2">Smart Tech</a>
+        <a @click="open=false" href="#work" class="py-2">Work</a>
+        <a @click="open=false" href="#process" class="py-2">Process</a>
+        <a @click="open=false" href="#faq" class="py-2">FAQ</a>
+        <a @click="open=false" href="#contact" class="py-2">Contact</a>
+        <a @click="open=false" href="#contact" class="mt-2 inline-flex items-center gap-2 rounded-xl border border-sky-400/40 bg-sky-500/10 px-4 py-2 font-semibold text-sky-200">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-sky-600/10 to-transparent"></div>
+    <div aria-hidden="true" class="absolute -top-16 -right-24 w-[42rem] h-[42rem] rounded-full bg-sky-500/10 blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-4 pt-16 pb-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-sky-300/80">
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span> Garage Remodeling & Automation
+        </p>
+        <h1 class="mt-4 text-4xl md:text-5xl font-extrabold leading-tight">Turn your garage into a <span class="text-sky-400">high‑performance</span> space.</h1>
+        <p class="mt-4 text-slate-300 max-w-xl">Arcbrim LLC designs and remodels garages that work as hard as you do—epoxy floors, custom storage, EV‑ready power, and smart control that puts everything on autopilot.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-sky-400/40 bg-sky-500/10 px-5 py-3 font-semibold text-sky-200 hover:bg-sky-500/20">Get a Free Estimate</a>
+          <a href="#work" class="inline-flex items-center gap-2 rounded-xl border border-white/10 px-5 py-3 font-semibold hover:bg-white/5">See Our Work</a>
+        </div>
+        <div class="mt-8 flex items-center gap-6 text-xs text-slate-400">
+          <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Licensed & Insured</div>
+          <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Veteran‑Led</div>
+          <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Warranty Backed</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-2xl border border-white/10 overflow-hidden shadow-2xl relative img-card">
+          <!-- Replace the /images file names with your uploaded assets in your repo -->
+          <img src="/images/hero-arcbrim-1.png" class="w-full h-full object-cover" alt="Polished epoxy floor garage with premium dark cabinetry and tool storage"/>
+          <div class="img-badge bg-slate-900/85 backdrop-blur rounded-lg border border-white/10 px-3 py-1.5 text-xs font-semibold">Epoxy flake • Pro cabinetry</div>
+        </div>
+        <div class="hidden md:flex absolute -bottom-6 -left-6 bg-slate-900/90 border border-white/10 rounded-2xl p-4 gap-4 items-center shadow-xl">
+          <div class="w-12 h-12 rounded-xl grid place-items-center bg-sky-500/15 border border-sky-400/30"><svg class="w-6 h-6 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l7 4v10l-7 4-7-4V7l7-4zm0 2.2L7 7.2v9.6l5 3 5-3V7.2l-5-2z"/></svg></div>
+          <div>
+            <p class="text-sm font-semibold">Smart Scenes</p>
+            <p class="text-xs text-slate-400">Door, lights, climate, and security—synced.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 grain">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-6 mb-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold">What we remodel</h2>
+        <p class="text-slate-400 max-w-2xl">From floors to finishes, we deliver turn‑key garage makeovers with premium materials and precision craftsmanship. Choose a full remodel or targeted upgrades.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-white/10 bg-slate-900/40 p-6">
+          <div class="w-12 h-12 rounded-xl grid place-items-center bg-white/5 border border-white/10 mb-4">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v4H4V4zm0 6h10v10H4V10zm12 0h4v10h-4V10z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Remodeling & Finishes</h3>
+          <p class="text-slate-400 mt-2">Insulation, drywall, paint, windows & doors, and energy upgrades that modernize your space.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-slate-900/40 p-6">
+          <div class="w-12 h-12 rounded-xl grid place-items-center bg-white/5 border border-white/10 mb-4">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm2 4h14v2H5v-2zm-2 4h18v2H3v-2z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Storage & Organization</h3>
+          <p class="text-slate-400 mt-2">Premium cabinetry, slatwall, overhead lifts, bike racks, and custom workbenches.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-slate-900/40 p-6">
+          <div class="w-12 h-12 rounded-xl grid place-items-center bg-white/5 border border-white/10 mb-4">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 1 7 7v3h1a2 2 0 0 1 0 4h-1v3h-2v-3H7v3H5v-3H4a2 2 0 0 1 0-4h1V9a7 7 0 0 1 7-7z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Smart Security & Access</h3>
+          <p class="text-slate-400 mt-2">App‑controlled doors, cameras, sensors, and scenes tied to presence and schedules.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-slate-900/40 p-6">
+          <div class="w-12 h-12 rounded-xl grid place-items-center bg-white/5 border border-white/10 mb-4">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M7 3h10v2H7zM5 7h14v2H5zM7 11h10v2H7zM5 15h14v2H5zM7 19h10v2H7z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Power, Lighting & EV</h>
+          <p class="text-slate-400 mt-2">Panel upgrades, 240V EV charging, task lighting, compressed air, and climate control.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-slate-900/40 p-6">
+          <div class="w-12 h-12 rounded-xl grid place-items-center bg-white/5 border border-white/10 mb-4">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7l5 9H7l5-9z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Coatings & Concrete</h3>
+          <p class="text-slate-400 mt-2">Crack repair, moisture mitigation, epoxy/poly flake systems, stem‑wall work, and drainage.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-slate-900/40 p-6">
+          <div class="w-12 h-12 rounded-xl grid place-items-center bg-white/5 border border-white/10 mb-4">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Optional New Builds</h3>
+          <p class="text-slate-400 mt-2">Detached or attached, engineered and permitted end‑to‑end when a new structure is right.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Tech & Automation -->
+  <section id="smart" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="order-2 lg:order-1">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Smart tech that disappears into the remodel</h2>
+        <p class="mt-4 text-slate-300">We design automation that feels natural: presence‑based lighting, climate schedules, scene buttons by the door, and integrations with Google Home, Alexa, and Apple Home.</p>
+        <ul class="mt-6 grid gap-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-emerald-400"></span> Open/close doors by geofence or voice</li>
+          <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-emerald-400"></span> Motion‑tuned, flicker‑free LED task lighting</li>
+          <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-emerald-400"></span> Temperature and humidity control with alerts</li>
+          <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-emerald-400"></span> Cameras and sensors unified into a single app</li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-sky-400/40 bg-sky-500/10 px-5 py-3 font-semibold text-sky-200 hover:bg-sky-500/20">Plan My Smart Garage</a>
+          <a href="#faq" class="inline-flex items-center gap-2 rounded-xl border border-white/10 px-5 py-3 font-semibold hover:bg-white/5">FAQs</a>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <div class="aspect-[4/3] rounded-2xl border border-white/10 overflow-hidden">
+          <img src="/images/garage-tv-station-532907.jpg" alt="Garage workspace with epoxy floor, cabinetry, wall‑mounted TV, sink and storage solutions" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Work -->
+  <section id="work" class="py-20 grain">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-6 mb-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Selected work</h2>
+        <p class="text-slate-400 max-w-2xl">Real Arcbrim‑style garage outcomes across Utah—epoxy flake floors, premium storage, and clean lighting.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <figure class="rounded-2xl overflow-hidden border border-white/10">
+          <img src="/images/garage-empty-highend-410862.jpg" alt="Epoxy flake flooring with premium storage wall and tool organization" class="w-full h-56 object-cover" loading="lazy"/>
+          <figcaption class="p-4 text-sm text-slate-300">Epoxy flake floor • Tool wall • Clean lighting</figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-white/10">
+          <img src="/images/garage-empty-highend-445323.jpg" alt="Spacious garage with epoxy floor and integrated cabinetry" class="w-full h-56 object-cover" loading="lazy"/>
+          <figcaption class="p-4 text-sm text-slate-300">Integrated cabinetry • Work zone • Open bay</figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-white/10">
+          <img src="/images/garage-empty-highend-532907.jpg" alt="Showroom‑style garage with glossy epoxy and long tool bench" class="w-full h-56 object-cover" loading="lazy"/>
+          <figcaption class="p-4 text-sm text-slate-300">Showroom finish • Long bench • Task lighting</figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-white/10">
+          <img src="/images/garage-empty-highend-828793.jpg" alt="Garage with glass doors, epoxy floor and wall storage" class="w-full h-56 object-cover" loading="lazy"/>
+          <figcaption class="p-4 text-sm text-slate-300">Glass doors • Wall storage • Bright LEDs</figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-white/10">
+          <img src="/images/garage-empty-custom-828793.jpg" alt="Custom storage solutions and epoxy flake floor" class="w-full h-56 object-cover" loading="lazy"/>
+          <figcaption class="p-4 text-sm text-slate-300">Custom storage • Slatwall • Epoxy flake</figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-white/10">
+          <img src="/images/hero-arcbrim-1.png" alt="Close‑up cabinetry and tool drawers over reflective epoxy floor" class="w-full h-56 object-cover" loading="lazy"/>
+          <figcaption class="p-4 text-sm text-slate-300">Premium cabinetry • Drawer systems • Pegboard</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-5 gap-10 items-start">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl md:text-4xl font-extrabold">A clean, predictable process</h2>
+          <p class="mt-4 text-slate-300">We operate like clockwork so your project does, too—clear milestones, tidy job sites, and a single point of contact from estimate to final walk‑through.</p>
+        </div>
+        <ol class="lg:col-span-3 grid gap-6">
+          <li class="rounded-2xl border border-white/10 p-6 bg-slate-900/40">
+            <div class="font-bold">1) Consultation & Site Visit</div>
+            <p class="text-slate-400 text-sm mt-1">We map your goals, measure, check utilities, and align on budget/lead times.</p>
+          </li>
+          <li class="rounded-2xl border border-white/10 p-6 bg-slate-900/40">
+            <div class="font-bold">2) Design & Proposal</div>
+            <p class="text-slate-400 text-sm mt-1">Layout, storage plan, finishes, and smart tech—priced transparently with options.</p>
+          </li>
+          <li class="rounded-2xl border border-white/10 p-6 bg-slate-900/40">
+            <div class="font-bold">3) Permits & Scheduling</div>
+            <p class="text-slate-400 text-sm mt-1">We handle permits, order materials, and lock your production window.</p>
+          </li>
+          <li class="rounded-2xl border border-white/10 p-6 bg-slate-900/40">
+            <div class="font-bold">4) Build & Quality Control</div>
+            <p class="text-slate-400 text-sm mt-1">Daily checklists, progress updates, and spotless sites—neighbors will thank you.</p>
+          </li>
+          <li class="rounded-2xl border border-white/10 p-6 bg-slate-900/40">
+            <div class="font-bold">5) Handover & Warranty</div>
+            <p class="text-slate-400 text-sm mt-1">Final walk‑through, documentation, and warranty support. We’re a call away.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-8">Frequently asked</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <details class="rounded-2xl border border-white/10 bg-slate-900/40 p-5" open>
+          <summary class="font-semibold cursor-pointer">How long does a remodel take?</summary>
+          <p class="mt-2 text-slate-400 text-sm">Typical garage remodels run 1–2 weeks depending on scope. New builds vary by permitting and complexity.</p>
+        </details>
+        <details class="rounded-2xl border border-white/10 bg-slate-900/40 p-5">
+          <summary class="font-semibold cursor-pointer">Do you offer design‑only services?</summary>
+          <p class="mt-2 text-slate-400 text-sm">Yes. We can produce layouts, finish schedules, and equipment specs with vendor lists.</p>
+        </details>
+        <details class="rounded-2xl border border-white/10 bg-slate-900/40 p-5">
+          <summary class="font-semibold cursor-pointer">Which smart platforms do you support?</summary>
+          <p class="mt-2 text-slate-400 text-sm">Apple Home, Google Home, Alexa, and platform‑agnostic hubs like Home Assistant.</p>
+        </details>
+        <details class="rounded-2xl border border-white/10 bg-slate-900/40 p-5">
+          <summary class="font-semibold cursor-pointer">Are coatings slippery?</summary>
+          <p class="mt-2 text-slate-400 text-sm">We add anti‑slip aggregate tailored to your use—bare feet gym vs. shop boots.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-14">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="rounded-2xl border border-sky-400/40 bg-gradient-to-br from-sky-600/10 to-sky-400/5 p-8 md:p-10 grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h3 class="text-2xl font-extrabold">Ready to elevate your garage?</h3>
+          <p class="mt-2 text-slate-300">Tell us how you use the space. We’ll craft a remodel plan that fits your gear, your schedule, and your budget.</p>
+        </div>
+        <div class="md:text-right">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-sky-400/40 bg-sky-500/10 px-6 py-3 font-semibold text-sky-200 hover:bg-sky-500/20">Start Your Estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 grain">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-5 gap-10">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl md:text-4xl font-extrabold">Get a free estimate</h2>
+          <p class="mt-4 text-slate-300">Tell us about your project and preferred timeline. We typically reply within one business day.</p>
+          <div class="mt-6 space-y-3 text-sm text-slate-300">
+            <div class="flex items-center gap-3"><svg class="w-5 h-5 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8L12 3l5.4 7.8A8 8 0 1 1 6.6 10.8z"/></svg> Utah</div>
+            <div class="flex items-center gap-3"><svg class="w-5 h-5 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v2H3zM3 9h18v2H3zM3 13h12v2H3z"/></svg> Licensed • Insured • Warranty</div>
+            <div class="flex items-center gap-3"><svg class="w-5 h-5 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M21 8V7l-3 2-3-2-3 2-3-2-3 2-3-2v1l3 2 3-2 3 2 3-2 3 2 3-2z"/></svg> Smart home integration available</div>
+            <div class="flex items-center gap-3"><svg class="w-5 h-5 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h20M2 4h20M4 2v20M20 2v20"/></svg> Email: <a class="underline hover:text-sky-300" href="mailto:support@arcbrim.com">support@arcbrim.com</a></div>
+          </div>
+        </div>
+        <!-- Netlify-ready form (works on Netlify; shows email above as visible contact) -->
+        <form name="contact" method="POST" data-netlify="true" class="lg:col-span-3 grid gap-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="grid md:grid-cols-2 gap-4">
+            <label class="block">
+              <span class="text-sm">Name</span>
+              <input required name="name" class="mt-1 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-3 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="Your full name" />
+            </label>
+            <label class="block">
+              <span class="text-sm">Email</span>
+              <input required type="email" name="email" class="mt-1 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-3 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="you@example.com" />
+            </label>
+          </div>
+          <label class="block">
+            <span class="text-sm">Phone</span>
+            <input name="phone" class="mt-1 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-3 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="(###) ###‑####" />
+          </label>
+          <label class="block">
+            <span class="text-sm">Service</span>
+            <select name="service" class="mt-1 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500">
+              <option>Garage Remodeling</option>
+              <option>Storage & Organization</option>
+              <option>Smart Technology & Security</option>
+              <option>Coatings & Concrete</option>
+              <option>Power, Lighting & EV</option>
+              <option>Design‑only</option>
+            </select>
+          </label>
+          <label class="block">
+            <span class="text-sm">Project details</span>
+            <textarea name="details" rows="5" class="mt-1 w-full rounded-xl bg-slate-900/60 border border-white/10 px-4 py-3 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="Tell us about your goals, timeline, and address (city/state)."></textarea>
+          </label>
+          <div class="flex items-center justify-between gap-4">
+            <label class="inline-flex items-center gap-2 text-sm">
+              <input type="checkbox" class="rounded border-white/20 bg-slate-900/60" checked>
+              I’d like a call this week
+            </label>
+            <button type="submit" class="inline-flex items-center gap-2 rounded-xl border border-sky-400/40 bg-sky-500/10 px-6 py-3 font-semibold text-sky-200 hover:bg-sky-500/20">Send Request</button>
+          </div>
+          <p class="text-xs text-slate-500">Prefer email? Reach us at <a href="mailto:support@arcbrim.com" class="underline">support@arcbrim.com</a>. We don’t share your data.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2 font-extrabold text-lg mb-3"><span class="inline-grid place-items-center w-7 h-7 rounded-lg bg-sky-500/20 border border-sky-400/30"><svg class="w-4 h-4 text-sky-400" viewBox="0 0 24 24" fill="currentColor"><path d="M3 14.5 12 4l9 10.5h-2.8L12 7.5 5.8 14.5z"/></svg></span> Arcbrim LLC</div>
+        <p class="text-slate-400">Smart garages, remodeled beautifully.</p>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Services</div>
+        <ul class="space-y-2 text-slate-400">
+          <li>Remodeling & Finishes</li>
+          <li>Organization</li>
+          <li>Smart Tech</li>
+          <li>Coatings</li>
+          <li>Power & EV</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Company</div>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#process" class="hover:text-sky-300">Our Process</a></li>
+          <li><a href="#work" class="hover:text-sky-300">Portfolio</a></li>
+          <li><a href="#faq" class="hover:text-sky-300">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Contact</div>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="mailto:support@arcbrim.com" class="hover:text-sky-300">support@arcbrim.com</a></li>
+          <li>Mon–Fri, 8am–6pm</li>
+          <li>Utah</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© <span id="year"></span> Arcbrim LLC. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-slate-300">Privacy</a>
+          <a href="#" class="hover:text-slate-300">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!--
+  ===== Image file checklist for your repo (place in /images) =====
+  hero-arcbrim-1.png  -> ChatGPT Image Sep 15, 2025, 10_26_30 AM.png
+  garage-tv-station-532907.jpg -> Firefly_garage with epoxy floors, storage solutions, tool boxes, a sink, and a television 532907.jpg
+  garage-empty-highend-410862.jpg -> Firefly_empty garage with epoxy floors and high end storage solutions for tools 410862.jpg
+  garage-empty-highend-445323.jpg -> Firefly_empty garage with epoxy floors and high end storage solutions for tools 445323.jpg
+  garage-empty-highend-532907.jpg -> Firefly_empty garage with epoxy floors and high end storage solutions for tools 532907.jpg
+  garage-empty-highend-828793.jpg -> Firefly_empty garage with epoxy floors and high end storage solutions for tools 828793.jpg
+  garage-empty-custom-828793.jpg -> Firefly_empty garage with epoxy flake floors and custom storage solutions for tools 828793.jpg
+  -->
+</body>
+</html>
