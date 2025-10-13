@@ -5,8 +5,8 @@
 
 # Optional: redirect www -> apex (for apex domain sites)
 [[redirects]]
-  from = "https://www.arcbrim.com/*"
-  to   = "https://arcbrim.com/:splat"
+  from = "https://www.arcbrimbuilders.com/*"
+  to   = "https://arcbrimbuilders.com/:splat"
   status = 301
   force = true
 
