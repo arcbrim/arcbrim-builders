@@ -1,0 +1,57 @@
+---
+const { title, current } = Astro.props;
+
+const nav = [
+  { href: "/", label: "Home", key: "home" },
+  { href: "/approach", label: "Approach", key: "approach" },
+  { href: "/standards", label: "Standards", key: "standards" },
+  { href: "/capabilities", label: "Capabilities", key: "capabilities" },
+  { href: "/inquiry", label: "Inquiry", key: "inquiry" }
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+
+    <link rel="icon" type="image/png" href="/icons/favicon.png" />
+    <link rel="apple-touch-icon" href="/icons/favicon.png" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="ARCBRIM BUILDERS home">
+          <img class="brand-logo" src="/assets/img/logo-builders.png" alt="ARCBRIM BUILDERS" width="220" height="40" decoding="async" />
+        </a>
+
+        <nav aria-label="Primary navigation">
+          {nav.map((item) => (
+            <a href={item.href} aria-current={current === item.key ? "page" : undefined}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        Arcbrim Builders is an independently operated business owned by Arcbrim.
+      </div>
+    </footer>
+  </body>
+</html>
