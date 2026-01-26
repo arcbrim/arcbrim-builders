@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "astro": "^5.16.15",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
     "tinacms": "^3.3.1"
   },
   "devDependencies": {

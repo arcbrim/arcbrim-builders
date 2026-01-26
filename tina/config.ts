@@ -1,4 +1,4 @@
-import { defineConfig } from "tinacms";
+ximport { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -29,9 +29,17 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "pages",
+        label: "Pages",
+        path: "content/pages",
+        format: "md",
+        ui: {
+          router: ({ document }) => {
+            const slug = document._sys.filename;
+            if (slug === "home") return "/";
+            return `/${slug}`;
+          },
+        },
         fields: [
           {
             type: "string",
@@ -39,6 +47,11 @@ export default defineConfig({
             label: "Title",
             isTitle: true,
             required: true,
+          },
+          {
+            type: "string",
+            name: "lede",
+            label: "Lead",
           },
           {
             type: "rich-text",

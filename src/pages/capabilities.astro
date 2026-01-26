@@ -1,34 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { loadPage } from "../lib/pageContent";
+
+const { data, html } = loadPage("capabilities");
 ---
-<BaseLayout title="Capabilities | ARCBRIM BUILDERS" current="capabilities">
+<BaseLayout title={`${data.title ?? "Capabilities"} | ARCBRIM BUILDERS`} current="capabilities">
   <section class="section">
-    <h1>Capabilities</h1>
-    <p class="muted">Arcbrim Builders engages in work where discipline and detail matter. Specifics are established after evaluation.</p>
-  </section>
-
-  <section class="section">
-    <h2>Scope Overview</h2>
-    <p>Typical scope includes:</p>
-    <ul>
-      <li>Residential construction</li>
-      <li>Specialty builds</li>
-      <li>Detail-driven and technically complex projects</li>
-    </ul>
-    <p>Specifics are established after evaluation.</p>
-  </section>
-
-  <section class="section">
-    <h2>What We Decline</h2>
-    <p>Arcbrim Builders does not engage in:</p>
-    <ul>
-      <li>Low-bid competitions</li>
-      <li>Undefined or evolving scopes</li>
-      <li>Projects without decision authority</li>
-      <li>Compressed timelines without tradeoffs</li>
-    </ul>
-    <p>Declining misaligned work is intentional.</p>
-
+    <h1>{data.title ?? "Capabilities"}</h1>
+    <p class="muted">{data.lede ?? ""}</p>
+    <div class="callout" set:html={html}></div>
     <div class="actions">
       <a class="button" href="/inquiry">Begin an inquiry</a>
     </div>
