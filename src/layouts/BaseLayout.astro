@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 const { title, current } = Astro.props;
 
 const nav = [
@@ -16,31 +17,57 @@ const nav = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
 
-    <link rel="icon" type="image/png" href="/icons/favicon.png" />
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/favicon.png" type="image/png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/icons/favicon.png" />
+
     <meta name="theme-color" content="#000000" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
+
   <body>
     <header>
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="ARCBRIM BUILDERS home">
-          <img class="brand-logo" src="/assets/img/logo-builders.png" alt="ARCBRIM BUILDERS" width="220" height="40" decoding="async" />
+          <img class="brand-logo" src="/assets/img/logo-builders-black.svg" alt="ARCBRIM BUILDERS" decoding="async" />
         </a>
 
-        <nav aria-label="Primary navigation">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menu
+        </button>
+
+        <nav id="primary-nav" class="nav" aria-label="Primary navigation">
           {nav.map((item) => (
-            <a href={item.href} aria-current={current === item.key ? "page" : undefined}>
+            <a class="nav-link" href={item.href} aria-current={current === item.key ? "page" : undefined}>
               {item.label}
             </a>
           ))}
         </nav>
       </div>
     </header>
+
+    <script is:inline>
+      (() => {
+        const btn = document.querySelector('.nav-toggle');
+        const nav = document.getElementById('primary-nav');
+        if (!btn || !nav) return;
+
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          nav.classList.toggle('is-open', !expanded);
+        });
+      })();
+    </script>
 
     <main>
       <div class="container">
@@ -50,7 +77,15 @@ const nav = [
 
     <footer>
       <div class="container">
-        Arcbrim Builders is an independently operated business owned by Arcbrim.
+        <div>
+          <strong>Arcbrim Builders</strong><br />
+          Salt Lake County and surrounding regions<br />
+          Inquiries: <a href="mailto:support@arcbrim.com">support@arcbrim.com</a> · 801-917-0892
+        </div>
+
+        <div>
+          Arcbrim Builders is an independently operated business owned by Arcbrim, LLC.
+        </div>
       </div>
     </footer>
   </body>

@@ -1,40 +1,21 @@
 ---
 title: ARCBRIM BUILDERS
-lede: Residential construction executed with discipline and accountability.
+lede: Residential construction executed with clarity, discipline, and accountability.
 ---
 
-Arcbrim Builders engages selectively in projects where scope, decision authority, and standards can be clearly defined.
+## What clients experience
 
-## What We Do
+Clients working with Arcbrim Builders can expect:
 
-Arcbrim Builders executes complex residential and specialty construction work with a focus on clarity, control, and follow-through.
+- Clear definition of scope before work begins  
+- Direct access to decision-makers  
+- Documented communication and expectations  
+- Deliberate control of changes, cost, and schedule  
 
-- Defined scope
-- Structured evaluation
-- Controlled execution
-- Direct communication
+The goal is not simply to build, but to build without confusion.
 
-We do not pursue volume. We accept work selectively.
+## Selective by design
 
-## How We Operate
+Not every project is a fit. That selectivity protects the client experience and the quality of execution. Projects move forward only when alignment exists on process, responsibility, and risk.
 
-Engagement begins with qualification, not persuasion.
-
-Projects advance only when:
-
-- Requirements are clear
-- Decision authority is established
-- Risk can be bounded
-- Expectations can be documented
-
-Details are established after alignment.
-
-## Who We Work With
-
-Arcbrim Builders works with:
-
-- Property owners prepared to make timely decisions
-- Architects and designers who value defined scope
-- Clients comfortable with firm boundaries and documented process
-
-Not all projects are a fit. That selectivity protects outcomes.
+If that approach resonates, an inquiry is the appropriate next step.

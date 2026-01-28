@@ -4,12 +4,42 @@ import { loadPage } from "../lib/pageContent";
 
 const { data, html } = loadPage("home");
 ---
+
 <BaseLayout title={data.title ?? "ARCBRIM BUILDERS"} current="home">
   <section class="section">
-    <h1>{data.lede ?? ""}</h1>
-    <div class="callout" set:html={html}></div>
-    <div class="actions">
-      <a class="button" href="/inquiry">Begin an inquiry</a>
+    <div class="stack">
+      <h1>{data.title ?? "ARCBRIM BUILDERS"}</h1>
+      <p class="lede">{data.lede ?? ""}</p>
+
+      <img
+        src="/assets/img/hero-builders.jpg"
+        alt="Modern, purpose-built residential garage environment"
+        class="hero-image"
+        loading="eager"
+        decoding="async"
+      />
+
+      <div class="callout">
+        <div class="prose">
+          <p>
+            Arcbrim Builders is a residential construction firm focused on premium garage
+            environments where expectations, decision authority, and standards can be clearly defined.
+          </p>
+          <p>
+            We work with clients who value thoughtful planning, direct communication, and controlled execution.
+            Our role is to deliver outcomes that hold up under scrutiny.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="prose" set:html={html}></div>
+
+        <div class="actions">
+          <a class="cta" href="/inquiry">Begin an inquiry</a>
+        </div>
+      </div>
     </div>
   </section>
 </BaseLayout>
+

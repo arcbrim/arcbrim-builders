@@ -6,11 +6,18 @@ const { data, html } = loadPage("approach");
 ---
 <BaseLayout title={`${data.title ?? "Approach"} | ARCBRIM BUILDERS`} current="approach">
   <section class="section">
-    <h1>{data.title ?? "Approach"}</h1>
-    <p class="muted">{data.lede ?? ""}</p>
-    <div class="callout" set:html={html}></div>
-    <div class="actions">
-      <a class="button" href="/inquiry">Begin an inquiry</a>
+    <div class="stack">
+      <h1>{data.title ?? "Approach"}</h1>
+      <p class="lede">{data.lede ?? ""}</p>
+
+      <div class="callout">
+        <div class="prose" set:html={html}></div>
+      
+        <div class="actions">
+          <a class="cta" href="/inquiry">Begin an inquiry</a>
+        </div>
+      </div>  
     </div>
   </section>
 </BaseLayout>
+ 

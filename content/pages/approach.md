@@ -3,27 +3,34 @@ title: Approach
 lede: Engagement begins with qualification, not persuasion.
 ---
 
-Arcbrim Builders operates with a disciplined approach to engagement. We prioritize alignment, feasibility, and clarity before commitment.
+Arcbrim Builders approaches each project as a structured engagement rather than a transaction.
 
-## Engagement Stages
+Before any commitment is made, we focus on understanding the project, the decision environment, and the constraints that shape it.
 
-### Initial Evaluation
+## How engagement begins
 
-Initial contact is treated as a qualification step. We assess project type, location, budget range, timeline, and decision-maker involvement.
+Initial conversations are used to understand:
 
-### Feasibility Review
+- Project type and complexity  
+- Budget range and timing expectations  
+- Decision authority and stakeholder structure  
+- Tolerance for documentation and process  
 
-If alignment appears possible, we conduct a structured review to determine whether the project should proceed. This phase exists to surface constraints early.
+These conversations are intentionally direct. Clarity early prevents friction later.
 
-### Commitment
+## From alignment to execution
 
-Once engaged, scope is defined, responsibilities are documented, communication cadence is established, and changes are controlled.
+When a project moves forward, expectations are formalized. Scope is defined, communication cadence is established, and responsibilities are documented.
 
-## What This Approach Avoids
+This approach reduces reactive decision-making and protects both the client and the project as conditions evolve.
 
-- Undefined scopes
-- Reactive decision-making
-- Informal change requests
-- Compressed timelines without tradeoffs
+## What this avoids
 
-Clarity is not negotiable.
+A disciplined approach avoids:
+
+- Undefined or shifting scope  
+- Informal or undocumented changes  
+- Compressed timelines without tradeoffs  
+- Decision bottlenecks during execution  
+
+The objective is not speed at all costs. The objective is control.

@@ -1,25 +1,11 @@
 ---
 title: Capabilities
-lede: Arcbrim Builders engages in work where discipline and detail matter.
+lede: Focused execution for residential projects where detail and discipline matter.
 ---
 
-Specifics are established after evaluation.
+Arcbrim Builders designs and executes premium garage environments that support real use. The objective is a space that feels intentional, durable, and easy to maintain.
 
-## Scope Overview
+Scope is evaluated after alignment, but projects typically combine finish work, storage strategy, lighting and power planning, and automation where appropriate.
 
-Typical scope includes:
+We work best with clients who value clarity, documented decisions, and controlled change.
 
-- Residential construction
-- Specialty builds
-- Detail-driven and technically complex projects
-
-## What We Decline
-
-Arcbrim Builders does not engage in:
-
-- Low-bid competitions
-- Undefined or evolving scopes
-- Projects without decision authority
-- Compressed timelines without tradeoffs
-
-Declining misaligned work is intentional.

@@ -6,11 +6,57 @@ const { data, html } = loadPage("capabilities");
 ---
 <BaseLayout title={`${data.title ?? "Capabilities"} | ARCBRIM BUILDERS`} current="capabilities">
   <section class="section">
-    <h1>{data.title ?? "Capabilities"}</h1>
-    <p class="muted">{data.lede ?? ""}</p>
-    <div class="callout" set:html={html}></div>
-    <div class="actions">
-      <a class="button" href="/inquiry">Begin an inquiry</a>
+    <div class="stack">
+      <h1>{data.title ?? "Capabilities"}</h1>
+      <p class="lede">{data.lede ?? ""}</p>
+
+      <img
+        src="/assets/img/capabilities-architecture.png"
+        alt="Architectural plans and design process for a custom residential garage build"
+        class="hero-image"
+      />
+
+      <div class="callout">
+        <div class="prose" set:html={html}></div>
+      </div>
+
+      <h2>Core capabilities</h2>
+      
+      <div class="grid">
+        <div class="card">
+          <h3>Premium garage builds</h3>
+          <p class="muted">Purpose-built spaces designed for vehicles, gear, and daily use.</p>
+        </div>
+
+        <div class="card">
+          <h3>Integrated storage systems</h3>
+          <p class="muted">Cabinetry, wall systems, overhead storage, and dedicated zones.</p>
+        </div>
+
+        <div class="card">
+          <h3>Flooring and finish packages</h3>
+          <p class="muted">Surface prep, coatings, base details, and durable finish strategy.</p>
+        </div>
+
+        <div class="card">
+          <h3>Lighting and power planning</h3>
+          <p class="muted">Layered lighting, task zones, outlets, and future-proofed capacity.</p>
+        </div>
+
+        <div class="card">
+          <h3>Automation and control</h3>
+          <p class="muted">Smart access, lighting scenes, monitoring, and integrated controls.</p>
+        </div>
+
+        <div class="card">
+          <h3>Gear and hobby outfitting</h3>
+          <p class="muted">Storage for bikes, skis, boards, climbing kits, and seasonal rotation.</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="cta" href="/inquiry">Begin an inquiry</a>
+      </div>
     </div>
   </section>
 </BaseLayout>

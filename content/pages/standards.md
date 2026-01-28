@@ -3,32 +3,38 @@ title: Standards
 lede: Standards exist to protect outcomes, reduce ambiguity, and establish accountability.
 ---
 
-Arcbrim Builders operates against explicit standards. They are enforced consistently.
+Arcbrim Builders operates against explicit standards. These standards govern communication, change management, and execution throughout the life of a project.
 
-## Communication Standards
+They are applied consistently across all projects.
 
-- Decisions are documented
-- Communication follows an agreed cadence
-- Breakdowns in clarity are escalated early
+## Communication
 
-Informal direction is not acted upon.
+Communication follows an agreed structure. Decisions are documented. Questions are surfaced early. Informal direction is clarified before action is taken.
 
-## Change Management
+This reduces misinterpretation and protects momentum.
 
-Changes are evaluated before execution. Any change includes scope impact, cost impact, and schedule impact. Changes outside this process are not honored.
+## Change management
 
-## Accountability
+Changes are evaluated before execution. Each change is reviewed for:
 
-### Our Accountability
+- Scope impact  
+- Cost impact  
+- Schedule impact  
 
-- Execution within defined scope
-- Transparent communication
-- Controlled delivery
+Changes that bypass this process are not implemented. This protects both parties from unintended consequences.
 
-### Client Accountability
+## Shared accountability
 
-- Timely decisions
-- Access and approvals
-- Respect for agreed process
+**Our Responsibility**
 
-Balance is essential.
+- Execute within defined scope  
+- Communicate clearly and consistently  
+- Surface risk early  
+
+**Client Responsibility**
+
+- Provide timely decisions  
+- Respect agreed processes  
+- Engage with clarity  
+
+Effective projects depend on balance.
