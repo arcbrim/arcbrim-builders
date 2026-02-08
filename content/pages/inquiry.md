@@ -1,9 +1,11 @@
 ---
 title: Inquiry
-lede: An inquiry begins with context, not commitment.
+lede: An inquiry is the start of alignment—not a sales conversation.
 ---
 
-Arcbrim Builders engages selectively. The purpose of an inquiry is to determine alignment before any scope, pricing, or scheduling discussion.
+Arcbrim Builders works with a limited number of projects at a time to ensure focus and execution quality.
+
+The inquiry process is designed to determine alignment before any commitments are made. Clear information up front allows for an efficient and respectful evaluation on both sides.
 
 ## What to include
 

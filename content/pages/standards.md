@@ -1,11 +1,11 @@
 ---
 title: Standards
-lede: Standards exist to protect outcomes, reduce ambiguity, and establish accountability.
+lede: Standards exist to protect outcomes—not restrict progress.
 ---
 
 Arcbrim Builders operates against explicit standards. These standards govern communication, change management, and execution throughout the life of a project.
 
-They are applied consistently across all projects.
+These standards are applied consistently across every engagement.
 
 ## Communication
 
@@ -37,4 +37,4 @@ Changes that bypass this process are not implemented. This protects both parties
 - Respect agreed processes  
 - Engage with clarity  
 
-Effective projects depend on balance.
+Effective projects depend on shared accountability and disciplined execution.

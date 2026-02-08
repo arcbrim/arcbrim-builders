@@ -1,11 +1,11 @@
 ---
 title: Approach
-lede: Engagement begins with qualification, not persuasion.
+lede: Clarity before commitment. Alignment before execution.
 ---
 
 Arcbrim Builders approaches each project as a structured engagement rather than a transaction.
 
-Before any commitment is made, we focus on understanding the project, the decision environment, and the constraints that shape it.
+Before any commitment is made, we focus on understanding the project, the decision environment, and the constraints involved. This ensures alignment before time, cost, or expectations are misallocated.
 
 ## How engagement begins
 
@@ -33,4 +33,5 @@ A disciplined approach avoids:
 - Compressed timelines without tradeoffs  
 - Decision bottlenecks during execution  
 
-The objective is not speed at all costs. The objective is control.
+The objective is not speed at all costs.
+The objective is control, clarity, and outcomes that remain defensible as conditions evolve.
