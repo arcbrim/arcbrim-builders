@@ -1,6 +1,6 @@
 ---
 title: ARCBRIM BUILDERS
-lede: Your space, thoguhtfully curated.
+lede: Your space, thoughtfully curated.
 ---
 
 Arcbrim Builders is a residential construction firm focused on the design and delivery of custom garage
