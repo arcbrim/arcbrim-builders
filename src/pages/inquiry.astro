@@ -15,7 +15,12 @@ const { data, html } = loadPage("inquiry");
       </div>
 
       <div class="callout">
-        <form class="inquiry-form">
+        <form class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="fe608e07-4c58-4921-a82e-14fd92975503" />
+          <input type="hidden" name="subject" value="New Inquiry — Arcbrim Builders" />
+          <input type="hidden" name="redirect" value="https://arcbrimbuilders.com" />
+          <input type="checkbox" name="botcheck" style="display:none;" />
+
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
